@@ -7,7 +7,12 @@ import { ApproveBlogComponent } from './approve-blog/approve-blog.component';
 
 const routes: Routes = [
 	{
-		path:"",
+		path: '',
+		redirectTo: 'login',
+		pathMatch: 'full'
+	},
+	{
+		path:"home",
 		component: HomeComponent
 	}, {
 		path:"add-blog",
