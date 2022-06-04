@@ -1,0 +1,13 @@
+<h1>My Blogs</h1>
+<br>
+<div class="card" *ngFor="let blog of blogList">
+  <div *ngIf="blog.status">
+    <div class="card-header">
+      {{blog.title}}
+    </div>
+    <div class="card-body">
+      <p class="card-text">{{ blog.content }}</p>
+    </div>
+  </div>
+  
+</div>

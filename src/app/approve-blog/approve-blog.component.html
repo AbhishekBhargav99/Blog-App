@@ -1,0 +1,14 @@
+<h1>Approve the Blog</h1>
+<br>
+<div class="card" *ngFor="let blog of blogList">
+  <div *ngIf="!blog.status">
+    <div class="card-header">
+      {{blog.title}}
+    </div>
+    <div class="card-body">
+      <p class="card-text">{{ blog.content }}</p>
+    </div>
+    <button class="btn btn-primary" (click)="addBlog(blog)">Approve</button>
+  </div>
+  
+</div>
